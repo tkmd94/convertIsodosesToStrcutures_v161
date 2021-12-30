@@ -1,5 +1,7 @@
 # convertIsodosesToStrcutures_v161
 
+[![LicenseBadges](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)  
+
 VARIAN社製治療計画装置EclipseのScripting codeです。
 
 実装機能：表示している全てのIsodose lineを輪郭に変換するスクリプト。
