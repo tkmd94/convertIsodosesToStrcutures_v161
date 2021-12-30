@@ -70,7 +70,9 @@ namespace VMS.TPS
                     {
                         newIsoStructure = ss.AddStructure("DOSE_REGION", isoStructureId);
                     }
+                    // this code from v16.1
                     newIsoStructure.ConvertDoseLevelToStructure(dose, isodose.Level);
+
                     newIsoStructure.Color = isodose.Color;
                     logtext += isoStructureName + "\n";
                 }
