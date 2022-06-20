@@ -8,8 +8,8 @@ using System.Windows.Media;
 using VMS.TPS.Common.Model.API;
 
 // TODO: Replace the following version attributes by creating AssemblyInfo.cs. You can do this in the properties of the Visual Studio project.
-[assembly: AssemblyVersion("1.2.0.1")]
-[assembly: AssemblyFileVersion("1.2.0.1")]
+[assembly: AssemblyVersion("1.3.0.1")]
+[assembly: AssemblyFileVersion("1.3.0.1")]
 [assembly: AssemblyInformationalVersion("1.0")]
 
 // TODO: Uncomment the following line if the script requires write access.
@@ -84,7 +84,7 @@ namespace VMS.TPS
                     if (isodose.Level.IsAbsoluteDoseValue)
                     {
                         // single absolute dose plan case
-                        isoStructureName = plan.Id + "_" + string.Format("{0:f2}", Math.Round(isodose.Level.Dose)) + "Gy";
+                        isoStructureName = plan.Id + "_" + string.Format("{0:f2}", Math.Round(isodose.Level.Dose, 2)) + "Gy";
                     }
                     else
                     {
@@ -95,7 +95,7 @@ namespace VMS.TPS
                 else if (planSum != null)
                 {
                     // planSum case
-                    isoStructureName = planSum.Id + "_" + string.Format("{0:f2}", Math.Round(isodose.Level.Dose)) + "Gy";
+                    isoStructureName = planSum.Id + "_" + string.Format("{0:f2}", Math.Round(isodose.Level.Dose, 2)) + "Gy";
                 }
              
 
